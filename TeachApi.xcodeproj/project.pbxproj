@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7509155A263F2170009EF728 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75091559263F2170009EF728 /* UserActionCell.swift */; };
+		7509155E263F2E9F009EF728 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509155D263F2E9F009EF728 /* ImageViewController.swift */; };
+		75091560263F33DC009EF728 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509155F263F33DC009EF728 /* Hero.swift */; };
+		75091562263F370A009EF728 /* HeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75091561263F370A009EF728 /* HeroesViewController.swift */; };
+		75091564263F3CC8009EF728 /* HeroesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75091563263F3CC8009EF728 /* HeroesCell.swift */; };
 		752C28FC263E56A100A47B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752C28FB263E56A100A47B11 /* AppDelegate.swift */; };
 		752C28FE263E56A100A47B11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752C28FD263E56A100A47B11 /* SceneDelegate.swift */; };
 		752C2900263E56A100A47B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752C28FF263E56A100A47B11 /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75091559263F2170009EF728 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		7509155D263F2E9F009EF728 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		7509155F263F33DC009EF728 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		75091561263F370A009EF728 /* HeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewController.swift; sourceTree = "<group>"; };
+		75091563263F3CC8009EF728 /* HeroesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCell.swift; sourceTree = "<group>"; };
 		752C28F8263E56A100A47B11 /* TeachApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeachApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752C28FB263E56A100A47B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		752C28FD263E56A100A47B11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +69,12 @@
 				752C28FB263E56A100A47B11 /* AppDelegate.swift */,
 				752C28FD263E56A100A47B11 /* SceneDelegate.swift */,
 				752C28FF263E56A100A47B11 /* ViewController.swift */,
+				7509155D263F2E9F009EF728 /* ImageViewController.swift */,
 				752C2901263E56A100A47B11 /* Main.storyboard */,
+				75091561263F370A009EF728 /* HeroesViewController.swift */,
+				75091563263F3CC8009EF728 /* HeroesCell.swift */,
+				7509155F263F33DC009EF728 /* Hero.swift */,
+				75091559263F2170009EF728 /* UserActionCell.swift */,
 				752C2904263E56A200A47B11 /* Assets.xcassets */,
 				752C2906263E56A200A47B11 /* LaunchScreen.storyboard */,
 				752C2909263E56A200A47B11 /* Info.plist */,
@@ -137,9 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7509155A263F2170009EF728 /* UserActionCell.swift in Sources */,
+				75091564263F3CC8009EF728 /* HeroesCell.swift in Sources */,
 				752C2900263E56A100A47B11 /* ViewController.swift in Sources */,
+				7509155E263F2E9F009EF728 /* ImageViewController.swift in Sources */,
+				75091562263F370A009EF728 /* HeroesViewController.swift in Sources */,
 				752C28FC263E56A100A47B11 /* AppDelegate.swift in Sources */,
 				752C28FE263E56A100A47B11 /* SceneDelegate.swift in Sources */,
+				75091560263F33DC009EF728 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
