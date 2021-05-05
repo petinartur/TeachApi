@@ -13,6 +13,21 @@ class NetworkManager {
     
     private init() {}
     
+    func fetchHeroes(from url: String?, with complition: @escaping ([Hero]) -> Void) {
+        AF.request(URLExamples.myAPI.rawValue)
+            .validate()
+            .responseJSON { dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    let heroess = Hero.getHero(from: value)
+                    
+                    DispatchQueue.main.async {
+                        complition(heroess)
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+    }
     
-    
+}
 }
