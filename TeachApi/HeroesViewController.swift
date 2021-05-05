@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class HeroesViewController: UITableViewController {
     
     var heroes: [Hero] = []
@@ -32,24 +32,22 @@ class HeroesViewController: UITableViewController {
 
 // MARK: - Networking
 extension HeroesViewController {
+ 
     func fetchHeroes() {
-        guard let url = URL(string: URLExamples.myAPI.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                self.heroes = try JSONDecoder().decode([Hero].self, from: data)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
+        AF.request(URLExamples.myAPI.rawValue)
+            .validate()
+            .responseJSON { dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    self.heroes = Hero.getHero(from: value)
+                    
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                case .failure(let error):
+                    print(error)
                 }
-            } catch let error {
-                print(error.localizedDescription)
-            }
-            
-        }.resume()
     }
+}
+
 }
